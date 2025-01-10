@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    font-size: 1rem;
+}
+
+/* HEADER SECTION*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header a img {
+    width: 12rem;
+    height: 4rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 1rem;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+
+}
+
+header nav ul li a:hover {
+    color: rgb(65, 63, 63);
+    text-shadow: 1px 1px 8px rgb(100, 100, 100);
+}
+
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.center {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    font-family: "Oswald", serif;
+}
+
+.container {
+    padding: 3rem;
+    width: 25rem;
+}
+
+.container h1 {
+    font-weight: bolder;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.btn-container button {
+    width: auto;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    border-radius: 4px;
+    background: gray;
+    color: white;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+
+/* ARTICLE SECTION*/
+#article {
+    /* background-color: rgba(205, 205, 241, 0.801); */
+    background-color: #d8e1e29c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 9rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+#article div {
+    display: grid;
+    grid-template-columns: repeat(2, 30rem);
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.article {
+    background-image: linear-gradient(rgb(252, 219, 189), WHITE);
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px dotted orangered;
+    border-radius: 2rem;
+    text-align: justify;
+    transition: background-color 0.6s
+}
+
+.article p {
+    margin: 0.8rem;
+    color: #555;
+}
+.article-anchor{
+text-decoration: none;
+color: #333;
+}
+.article-anchor:visited{
+    color: #333;
+
+}
+.article:hover {
+    background: rgb(252, 219, 189);
+    border-color: #333;
+}
+
+/* SERVICES SECTION */
+
+.containersss {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 8rem;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #d8e1e29c;
+
+}
+
+.round {
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.round img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+h3,
+h4 {
+    text-align: center;
+
+}
+
+.holder ul {
+    list-style-type: square;
+    padding: 1.5rem;
+    /* margin-left: 7rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.holder:hover {
+    background-color: #96acafcb;
+    color: white;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    background-color: #d8e1e29c;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+#projects h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table td.completed {
+    background-color: #adebb3;
+}
+
+table td.ongoing {
+    background-color: #ffdbbb;
+}
+
+table td.closed {
+    background-color: #ff9e99;
+}
+
+
+
+/* Form Section Styling */
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+form {
+    width: 100%;
+    /* max-width: 700px; */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    grid-column: span 2;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.textarea-container {
+    grid-column: span 2;
+}
+
+.submit-btn {
+    background: rgba(41, 104, 241, 0.911);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+}
+
+.submit-btn:hover {
+    background: rgb(21, 93, 248);
+}
+
+
+.button-container {
+    text-align: center;
+    grid-column: span 2;
+}
+
+
+
+
+
+
+/* AUDIO VIDEO SECTION */
+#audvid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    border-radius: 10px;
+}
+
+#audvid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#audvid h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#audvid video,
+#audvid audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background-color: darkgray;
+    padding: 0.5rem;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1230px) {
+    #images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: fit-content;
+
+    }
+
+    img {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        margin: 4rem;
+        padding: 2.5rem;
+        width: 20rem;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    #article {
+        margin: 0;
+    }
+
+    #article div {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .article {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .article p {
+        font-size: 0.9rem;
+    }
+
+    .background-image {
+        position: relative;
+        height: auto;
+        margin: 0;
+    }
+
+    .center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container p {
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 910px) {
+    #article {
+        padding: 1rem;
+
+    }
+
+    #article div {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    article {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+    }
+
+    .containersss {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        ;
+    }
+}
+
+@media (max-width: 815px) {
+
+    .background-image {
+        position: relative;
+        height: auto;
+    }
+
+    .center {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+        width: auto;
+    }
+
+    div .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        margin: 0;
+    }
+
+    div .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 668px) {
+    .logo-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #d8e1e2;
+    }
+
+    header div {
+        margin-left: 0;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 20%;
+    }
+
+    .center {
+        height: 60vh;
+    }
+
+    .container {
+        margin: 2rem;
+        padding: 1.5rem;
+        width: 15rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .center {
+        height: 50vh;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        font-size: 0.8rem;
+    }
+    #projects {
+        padding: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        /* Stack elements in a single column */
+        gap: 1rem;
+        /* Reduce the gap between elements */
+    }
+
+    form h3,
+    .textarea-container,
+    .submit-btn,
+    .button-container {
+        grid-column: span 1;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    #services {
+        margin: 2rem;
+    }
+
+    .containersss {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .round {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .holder ul {
+        padding: 1rem;
+    }
+}
